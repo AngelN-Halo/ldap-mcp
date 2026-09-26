@@ -1,0 +1,17 @@
+.env
+.git
+.gitignore
+__pycache__
+*.pyc
+certs
+
+# Keep local deployment data out of the Docker build context
+.env
+.env.*
+!.env.example
+!.env.upstream.example
+secrets/
+certs/*
+!certs/.gitkeep
+backup-*/
+*.log
